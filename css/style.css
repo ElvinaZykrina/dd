@@ -1,0 +1,182 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: Century Gothic, sans-serif;
+	background-image: url('https://sun9-61.userapi.com/impf/1ZMINgdASKXZEacv929CmzrNdhgeKJ0iiH1CAQ/C8idftkcmEM.jpg?size=400x400&quality=96&proxy=1&sign=595fdf4f597c3600f40b4a1fd68b9167&type=album');
+}
+
+header {
+	background-color: black;
+	color: white;
+	margin: 0;
+	width: 100%;
+	align-items: center;
+	top: 0;
+}
+hr {
+	margin: 0;
+}
+ul > li{
+	font-size: 15px;
+	display: inline-block;
+	padding: 0 10px 0 10px;
+	margin: 0;
+}
+.logo {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 50px;
+}
+.logo > p {
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+}
+.search-logo-cart{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 30px 50px;
+	margin: 0;
+}
+.navigation {
+	margin: 0 17px 20px 15px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 30px;
+	background-color: black;
+	height: 100%;
+	opacity: 0.4;
+	color: white;
+	text-decoration: none;
+	padding: 40px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: #9e6c20;
+	transition-duration: 1s;
+}
+a:active {
+	opacity: 0.4;
+}
+.center {
+	display: flex;
+ 	width: 60%; 
+	padding: 10px; 
+	margin: auto;
+	background: #fc0;
+}
+.all-products {
+    width: 75%;
+    margin:0 auto;  
+}
+
+.product {
+	display: inline-block;
+	flex-wrap: nowrap;
+	padding: 35px;
+	background-color: white;
+	margin: 20px;
+}
+.tabs_block {
+	flex-wrap: nowrap;
+}
+.tabs_block:target {
+	display: block;
+}
+#contactUs:target {
+	display: block;
+}
+#back:target {
+	display: block;
+}
+footer {
+	background-color: black;
+	color: white;
+	margin-top: 150px;
+}
+.footer-registration {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	color: black;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.first-last, .row {
+	display: inline-block;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: white;
+	margin: 20px 0 20px 0;
+	padding: 20px;
+}
+footer h6, h5 {
+	color: white;
+}
+.first-name .last-name {
+   display: inline;
+}
+.first-last h4  {
+	margin: 0;
+}
+
+.first-last h3 {
+ 	margin: 5px 0 20px 0;
+ }
+textarea {
+	margin: 0;
+	padding: 0;
+}
+input {
+	display: block;
+    height: auto;
+    padding: 12px 20px;
+    margin: 5px 120px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    background: white;
+    color: #5f6a7d;
+    font: 13px ;
+    margin-bottom: 15px;
+}
+.sign_up {
+	background-color: black;
+	color: #5f6a7d;
+	border: 1px solid #5f6a7d;
+	display: inline;
+	margin: 0;
+	padding: 12px 20px;
+}
+.sign_up:hover {
+	color: white;
+	border: 1px solid white;
+}
+.back {
+	width: 300px;
+	text-align: right;
+}
+.footer-social {
+    text-align: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+.footer-text {
+	display: flex;
+	justify-content: center;
+    line-height: 30px;
+}
+
+.footer_social {
+   	margin: 30px;
+}
+.footer_social_item:hover {
+	opacity: 0.4;
+	transition-duration: 0.5s;
+}

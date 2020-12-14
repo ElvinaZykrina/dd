@@ -1,0 +1,290 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+body {
+	font: 15px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url('https://sun9-61.userapi.com/impf/1ZMINgdASKXZEacv929CmzrNdhgeKJ0iiH1CAQ/C8idftkcmEM.jpg?size=400x400&quality=96&proxy=1&sign=595fdf4f597c3600f40b4a1fd68b9167&type=album');
+}
+header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 50px;
+	color: white;
+	background-color: black;
+}
+.logo > p {
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+}
+.logo_center {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+img {
+	width: 500px;
+	height: 500px;
+}
+main {
+	display: flex;
+	justify-content: center;
+}
+.product {
+	width: 40%;
+}
+.info {
+	width: 25%;
+	display: inline-block;
+	margin-bottom: 300px;
+}
+button {
+	margin: 7px;
+	text-align: center;
+	width: 175px;
+	height: 40px;
+	background-color: black;
+    color: #5f6a7d;
+    border: 1px solid #5f6a7d;
+}
+select, input, lable, h4 {
+	margin: 7px;
+	padding: 7px;
+}
+select {
+	width: 90px;
+}
+
+button:hover{
+	color: white;
+    border: 1px solid white;
+    transition-duration: 0.4s;
+}
+footer {
+	background-color: black;
+	color: white;
+}
+.footer-registration {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	color: black;
+	margin-bottom: 30px;
+	font: 20px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.first-last, .row {
+	display: inline-block;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: white;
+	margin: 20px 0 20px 0;
+	padding: 20px;
+}
+footer h6, h5 {
+	color: white;
+}
+.first-name .last-name {
+   display: inline;
+}
+.first-last h4  {
+	margin: 0;
+}
+.first-last h3 {
+ 	margin: 5px 0 20px 0;
+ }
+textarea {
+	margin: 0;
+	padding: 0;
+}
+footer input {
+	display: block;
+    height: auto;
+    padding: 12px 20px;
+    margin: 5px 120px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    background: white;
+    color: #5f6a7d;
+    font: 13px ;
+    margin-bottom: 15px;
+}
+.back {
+	width: 270px; 
+	text-align: right;
+}
+.sign_up {
+	background-color: black;
+	color: #5f6a7d;
+	border: 1px solid #5f6a7d;
+	display: inline;
+	margin: 0;
+	padding: 12px 20px;
+}
+.sign_up:hover {
+	color: white;
+	border: 1px solid white;
+}
+.footer-social {
+    text-align: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+.footer-text {
+	display: flex;
+	justify-content: center;
+    line-height: 30px;
+}
+
+.footer_social {
+   	margin: 30px;
+}
+.footer-social  img {
+	width: 24px;
+	height: 24px;
+}
+.footer_social_item:hover {
+	opacity: 0.4;
+	transition-duration: 0.5s;
+}
+/*модальное окно*/
+
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+     -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+table {
+	margin-bottom: 30px;
+}
+table, td {
+	border: 1px solid lightgray;
+	border-collapse: collapse;
+}
+td {
+	text-align: center;
+	padding: 5px;
+}
+.modal-body  h3 {
+	 font-weight: 500;
+}
+a {
+	text-decoration: none;
+	color: black;
+	margin: 7px;
+	font-size: 15px;
+	font-weight: bold;
+}
+a:hover {
+	color: white;
+}
